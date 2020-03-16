@@ -1,25 +1,34 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import {
+  HashRouter as Router,
+  Route,
+  Link,
+  Switch,
+  NavLink,
+} from 'react-router-dom';
+import Main from "./components/Main/"
+import Fav from "./components/Favorite/"
+import Top from "./components/Top"
+import Popular from "./components/Popular"
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Router>
+        <NavLink to="/" >Strona główna</NavLink>
+        <NavLink to="/fav" >Ulubione</NavLink>
+        <NavLink to="/popular" >Dzisiaj polecane</NavLink>
+        <NavLink to="/top" >Top wszechczasów</NavLink>
+        <Switch>
+          <Route path="/fav" component={Fav}></Route>
+          <Route path="/top" component={Top}></Route>
+          <Route path="/popular" component={Popular}></Route>
+          <Route path="/" component={Main}></Route>
+        </Switch>
+      </Router>
+    </>
   );
 }
 

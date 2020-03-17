@@ -1,0 +1,16 @@
+nav {
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .row {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .nav-item {
+            color: white
+        }
+    }
+}

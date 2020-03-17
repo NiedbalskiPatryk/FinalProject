@@ -1,0 +1,30 @@
+.row {
+    justify-content: space-around;
+
+    .single-movie {
+        background-color: cadetblue;
+        border-radius: 20px;
+        padding: 0.5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border: 1px solid black;
+
+        h3 {
+            padding: 1.5rem;
+        }
+
+        .date {
+            padding-top: 1rem;
+        }
+
+        .rating {
+            font-size: 2rem;
+        }
+
+        .overview {
+            font-size: 0.8rem;
+        }
+
+    }
+}

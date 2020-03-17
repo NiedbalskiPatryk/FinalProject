@@ -1,5 +1,5 @@
 import React from 'react';
-import './App.css';
+import './style.scss';
 import {
   HashRouter as Router,
   Route,
@@ -12,15 +12,18 @@ import Fav from "./components/Favorite/"
 import Top from "./components/Top"
 import Popular from "./components/Popular"
 
-
 function App() {
   return (
     <>
       <Router>
-        <NavLink to="/" >Strona główna</NavLink>
-        <NavLink to="/fav" >Ulubione</NavLink>
-        <NavLink to="/popular" >Dzisiaj polecane</NavLink>
-        <NavLink to="/top" >Top wszechczasów</NavLink>
+        <nav className="container navbar navbar-dark bg-dark">
+          <div className="row">
+            <NavLink className="col-3 nav-item" to="/" >Strona główna</NavLink>
+            <NavLink className="col-3 nav-item" to="/fav" >Ulubione</NavLink>
+            <NavLink className="col-3 nav-item" to="/popular" >Dzisiaj polecane</NavLink>
+            <NavLink className="col-3 nav-item" to="/top" >Top wszechczasów</NavLink>
+          </div>
+        </nav>
         <Switch>
           <Route path="/fav" component={Fav}></Route>
           <Route path="/top" component={Top}></Route>

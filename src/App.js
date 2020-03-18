@@ -13,6 +13,7 @@ import Top from "./components/Top"
 import Popular from "./components/Popular"
 import Navigation from './components/Navigation';
 import { toast, ToastContainer } from 'react-toastify';
+import Footer from "./components/Footer"
 
 
 export const MyContext = React.createContext(null);
@@ -23,8 +24,8 @@ function App() {
   const api = "http://localhost:4000/favoriteMovies";
 
 
-  const addToFavorite = (title, img, rating, id) => {
-    const body = { title, img, rating, id };
+  const addToFavorite = (title, img, rating, id, release) => {
+    const body = { title, img, rating, id, release };
     fetch(`${api}`, {
       method: "POST",
       body: JSON.stringify(body),
@@ -63,6 +64,7 @@ function App() {
         </Switch>
       </Router >
       <ToastContainer autoClose={6000} />
+      <Footer />
     </MyContext.Provider>
   );
 }

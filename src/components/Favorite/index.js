@@ -1,9 +1,11 @@
 import React, { useState, useEffect } from 'react';
+import "./style.scss"
 // import SingleMovie from "../SingleMovie"
 
 const Fav = () => {
     const [favMovieId, setfavMovieId] = useState([]);
     const [favMovie, setfavMovie] = useState([]);
+    const [counter, setcounter] = useState(1);
 
     useEffect(() => {
         fetch("http://localhost:4000/favoriteMovies")
@@ -23,25 +25,31 @@ const Fav = () => {
 
     return (
         <>
-            <div className="container">
+            <section className="container favorite">
                 <div className="row">
                     <h1 className="col-12">Twoje ulubione filmy to:</h1>
                 </div>
-            </div>
+            </section>
             <div className="container">
                 <div className="row">
-                    <table className="col-12 table">
+                    <table className=" table">
                         <thead>
                             <tr>
-                                <th></th>
-                                <th></th>
-                                <th></th>
+                                <th>L.p.</th>
+                                <th>Tytuł</th>
+                                <th>Data</th>
+                                <th>Ocena</th>
+                                <th>Więcej:</th>
                             </tr>
                         </thead>
                         <tbody>
-                            {favMovieId.map(el => (
+                            {favMovieId.map((el) => (
                                 <tr>
-                                    <td>{el.id}</td>
+                                    <td>{counter}</td>
+                                    <td>{el.title}</td>
+                                    <td>{el.release}</td>
+                                    <td>{el.rating}</td>
+                                    <td><button>Więcej!</button></td>
                                 </tr>
                             ))}
                         </tbody>

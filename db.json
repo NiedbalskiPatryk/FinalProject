@@ -1,22 +1,53 @@
 {
   "favoriteMovies": [
     {
-      "title": "Forrest Gump",
-      "img": "/toFaIsRMe24ugBb6K5hvf4bc2fi.jpg",
-      "rating": 8.4,
-      "id": 13
+      "title": "Ad Astra",
+      "img": "/iIXuzH42MVDYRQfzwWFvpQdb7TB.jpg",
+      "rating": 6,
+      "id": 419704,
+      "release": "2019-09-17"
     },
     {
-      "title": "Dawno temu w Ameryce",
-      "img": "/k6I9E24k3CwrV0upnvNyzGlau53.jpg",
-      "rating": 8.4,
-      "id": 311
+      "title": "Jumanji: Następny poziom",
+      "img": "/nyj0Y3IgpwBARdwfQrOh5X0ogws.jpg",
+      "rating": 6.8,
+      "id": 512200,
+      "release": "2019-12-04"
     },
     {
-      "title": "Dwunastu gniewnych ludzi",
-      "img": "/ooooiNQBvdhsQU2RoRSh6TwZVpD.jpg",
-      "rating": 8.4,
-      "id": 389
+      "title": "W deszczowy dzień w Nowym Jorku",
+      "img": "/kZwT6abfbushTYj8PFccSSRzD84.jpg",
+      "rating": 6.7,
+      "id": 475303,
+      "release": "2019-07-26"
+    },
+    {
+      "title": "Gwiezdne wojny: Część IX - Skywalker. Odrodzenie",
+      "img": "/qGB9Py9YQEgKbArisX64MXTP7Xp.jpg",
+      "rating": 6.5,
+      "id": 181812,
+      "release": "2019-12-18"
+    },
+    {
+      "title": "Bloodshot",
+      "img": "/8WUVHemHFH2ZIP6NWkwlHWsyrEL.jpg",
+      "rating": 5.9,
+      "id": 338762,
+      "release": "2020-02-20"
+    },
+    {
+      "title": "Skazani na Shawshank",
+      "img": "/sBnhJ4f5KAzg6C3FwnEb8QFj8SB.jpg",
+      "rating": 8.7,
+      "id": 278,
+      "release": "1994-09-23"
+    },
+    {
+      "title": "Parasite",
+      "img": "/jjHccoFjbqlfr4VGLVLT7yek0Xn.jpg",
+      "rating": 8.5,
+      "id": 496243,
+      "release": "2019-05-30"
     }
   ]
 }

@@ -44,7 +44,7 @@ const SingleMovie = props => {
                             <p className="date">{release}</p>
                             <p className="rating">{rating}/10</p>
                             <button onClick={handleClick}>Zobacz opis</button>
-                            <button onClick={() => addToFavorite(title, img, rating, id)}>Dodaj do ulubionych</button>
+                            <button onClick={() => addToFavorite(title, img, rating, id, release)}>Dodaj do ulubionych</button>
                         </div>
                     </div>
                     <div className="row">

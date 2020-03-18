@@ -1,20 +1,25 @@
+aside {
+    background-color: grey;
+    height: 100vh;
+}
+
 main {
-    .row {
-        h1 {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 2rem;
-        }
 
-        form {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            padding-bottom: 2rem;
-        }
-
+    h1 {
+        text-align: center;
+        padding: 1rem;
     }
 
+    form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 0.5rem;
+    }
+
+}
+
+.relative {
+    position: relative;
 }

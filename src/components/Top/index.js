@@ -1,12 +1,16 @@
-import React, { useState, useEffect } from 'react';
-import SingleMovie from "../SingleMovie"
+import React, { useState, useEffect, useContext } from 'react';
+import SingleMovie from "../SingleMovie";
+import { MyContext } from "../../App"
+
 
 const Top = () => {
     const [top, setTop] = useState([]);
     const [counter, setCounter] = useState(0);
+    const { state: { language }, setLanguage } = useContext(MyContext);
+
 
     useEffect(() => {
-        fetch("    https://api.themoviedb.org/3/movie/top_rated?api_key=4f3f0e045dad6e5691568c0932c0e161&language=pl-PL&page=1")
+        fetch(`https://api.themoviedb.org/3/movie/top_rated?api_key=4f3f0e045dad6e5691568c0932c0e161&language=${language}&page=1`)
             .then(res => res.json())
             .then(res => setTop(res.results))
     }, []);
@@ -17,7 +21,7 @@ const Top = () => {
                 <div className="row">
                     <h1 className="col-12">Top 20 Najlepszych filmów wszech czasów to:</h1>
                     <div className="container">
-                        <div className="row">
+                        <div className="row relative">
                             {top.map(movie => {
                                 return (
                                     <SingleMovie

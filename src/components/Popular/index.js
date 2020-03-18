@@ -1,12 +1,16 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useContext } from 'react';
 import SingleMovie from "../SingleMovie"
 import "./style.scss"
+import { MyContext } from "../../App"
 
 const Popular = () => {
-    const [popular, setPopular] = useState([])
+    const [popular, setPopular] = useState([]);
+    const { state: { language }, setLanguage } = useContext(MyContext);
+
+    console.log(language)
 
     useEffect(() => {
-        fetch("https://api.themoviedb.org/3/movie/popular?api_key=4f3f0e045dad6e5691568c0932c0e161&language=pl-PL&page=1")
+        fetch(`https://api.themoviedb.org/3/movie/popular?api_key=4f3f0e045dad6e5691568c0932c0e161&language=${language}&page=1`)
             .then(res => res.json())
             .then(res => setPopular(res.results))
     }, []);
@@ -19,7 +23,7 @@ const Popular = () => {
                 <div className="row">
                     <h1 className="col-12">Lista najbardziej populanych filmów w dniu {new Date().toLocaleDateString()}</h1>
                     <div className="container">
-                        <div className="row">
+                        <div className="row relative">
                             {popular.map(movie => {
                                 return (<SingleMovie
                                     key={movie.id}

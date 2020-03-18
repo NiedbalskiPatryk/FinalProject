@@ -49,22 +49,6 @@ const Main = () => {
                     </main>
                 </div>
             </div>
-            {/* <div className="container">
-                <div className="row">
-                    <table className="table">
-                        <thead>
-                            <tr>
-                                <th></th>
-                                <th></th>
-                                <th></th>
-                                <th></th>
-                                <th></th>
-                            </tr>
-                        </thead>
-                    </table>
-                </div >
-            </div> */}
-
             <div className="container">
                 <div className="row relative">
                     {movies.map(movie => {

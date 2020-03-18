@@ -15,8 +15,6 @@ const Popular = () => {
             .then(res => setPopular(res.results))
     }, []);
 
-    console.log(popular);
-
     return (
         <>
             <section className="container">

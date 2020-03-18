@@ -8,7 +8,6 @@ const Top = () => {
     const [counter, setCounter] = useState(0);
     const { state: { language }, setLanguage } = useContext(MyContext);
 
-
     useEffect(() => {
         fetch(`https://api.themoviedb.org/3/movie/top_rated?api_key=4f3f0e045dad6e5691568c0932c0e161&language=${language}&page=1`)
             .then(res => res.json())

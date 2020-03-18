@@ -1,18 +1,18 @@
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
 import "./style.scss"
+import { MyContext } from "../../App"
 
 const SingleMovie = props => {
     const { title, img, release, rating, overview, id } = props;
     const [display, setDisplay] = useState("none");
     const [display2, setDisplay2] = useState("block");
-
+    const { addToFavorite } = useContext(MyContext);
 
     const handleClick = (e) => {
         e.preventDefault();
         setDisplay(display === "none" ? "block" : "none");
         setDisplay2(display2 === "none" ? "block" : "none")
     }
-
     const imgLink = "http://image.tmdb.org/t/p/w185/"
     return (
         <>
@@ -42,6 +42,7 @@ const SingleMovie = props => {
                             <p className="date">{release}</p>
                             <p className="rating">{rating}</p>
                             <button onClick={handleClick}>Zobacz opis</button>
+                            <button onClick={() => addToFavorite(title, img, rating, id)}>Dodaj do ulubionych</button>
                         </div>
                     </div>
                     <div className="row">

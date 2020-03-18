@@ -1,0 +1,22 @@
+{
+  "favoriteMovies": [
+    {
+      "title": "Forrest Gump",
+      "img": "/toFaIsRMe24ugBb6K5hvf4bc2fi.jpg",
+      "rating": 8.4,
+      "id": 13
+    },
+    {
+      "title": "Dawno temu w Ameryce",
+      "img": "/k6I9E24k3CwrV0upnvNyzGlau53.jpg",
+      "rating": 8.4,
+      "id": 311
+    },
+    {
+      "title": "Dwunastu gniewnych ludzi",
+      "img": "/ooooiNQBvdhsQU2RoRSh6TwZVpD.jpg",
+      "rating": 8.4,
+      "id": 389
+    }
+  ]
+}

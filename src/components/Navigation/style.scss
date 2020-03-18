@@ -1,14 +1,102 @@
 nav {
     border-radius: 20px;
-    display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
 
     ul {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
         list-style: none;
+        padding: 0;
+        margin: 10px 0 0 0;
 
-        li a {
-            color: white
+        .logoDiv {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+
+            .fas {
+                display: none;
+                font-size: 2rem;
+            }
+
+            .logo {
+                display: block;
+                background-image: url("../../images/unnamed.png");
+                height: 50px;
+                background-size: contain;
+                background-repeat: no-repeat;
+                width: 50px;
+            }
+        }
+
+
+        .navList {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+
+            li {
+                display: inline-block;
+
+                a {
+                    padding: 1.3rem;
+                    color: white;
+                    transition: 0.5s;
+                    // border-radius: 30px;
+                    font-size: 1rem;
+                    white-space: nowrap;
+
+                    &:hover {
+                        background-color: grey;
+                        text-decoration: none;
+                        color: white;
+                        // border-bottom: 1px solid white;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    nav {
+        ul {
+            flex-direction: column;
+
+
+            .logoDiv {
+
+
+                .fas {
+                    display: block;
+                }
+            }
+
+            .none {
+                display: none;
+            }
+
+            .navList {
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+
+                li {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 100%;
+
+                    a {
+                        // padding: 2rem;
+                        text-align: center;
+                    }
+                }
+            }
         }
     }
 }

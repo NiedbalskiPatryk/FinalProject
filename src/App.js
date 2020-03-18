@@ -14,6 +14,7 @@ import Popular from "./components/Popular"
 import Navigation from './components/Navigation';
 import { toast, ToastContainer } from 'react-toastify';
 
+
 export const MyContext = React.createContext(null);
 
 function App() {

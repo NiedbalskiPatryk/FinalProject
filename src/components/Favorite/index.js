@@ -14,7 +14,7 @@ const Fav = () => {
     // const arr = favMovieId.map(el => `https://api.themoviedb.org/3/movie/${el.id}?api_key=4f3f0e045dad6e5691568c0932c0e161&language=en-US`)
 
     console.log(favMovieId)
-    // console.log(favMovie)
+    // console.log(favMovapp ie)
 
     // console.log(arr)
 

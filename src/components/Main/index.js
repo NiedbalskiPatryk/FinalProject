@@ -39,19 +39,21 @@ const Main = () => {
                             <label htmlFor="">Wpisz tytuł filmu jaki szukasz:</label>
                             <input type="text" onChange={handleChange} value={value} />
                             <label htmlFor="">Wybierz język</label>
-                            <select onChange={selectedOption} name="" id="">
-                                <option value="pl-PL">PL</option>
-                                <option value="en-US">EN</option>
-                                <option value="ru-RU">RU</option>
-                                <option value="de-DE">DE</option>
-                            </select>
+                            <div className="select">
+                                <select onChange={selectedOption} name="" id="">
+                                    <option value="pl-PL">PL</option>
+                                    <option value="en-US">EN</option>
+                                    <option value="ru-RU">RU</option>
+                                    <option value="de-DE">DE</option>
+                                </select>
+                            </div>
                         </form>
                     </main>
                 </div>
             </div>
             <div className="container">
                 <div className="row relative">
-                    {movies.map(movie => {
+                    {movies.slice(0, 6).map(movie => {
                         return (
                             <>
                                 <SingleMovie

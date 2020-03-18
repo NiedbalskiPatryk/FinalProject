@@ -1,52 +1,117 @@
 .absolute {
     position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
+    // top: 0;
+    // bottom: 0;
+    // left: 0;
+    // right: 0;
     z-index: 1;
-    background-color: white;
-    // transform: translateY(50%);
+    background-color: rgb(39, 39, 39);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+        padding: 20px;
+    }
 
     .absoluteDiv {
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
+        color: white;
+
+        .titleDateRating {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-direction: column;
+
+            h5 {
+                font-size: 4rem;
+                text-align: center;
+            }
+
+            .date {
+                font-size: 2rem;
+            }
+
+            .rating {
+                font-size: 2rem;
+            }
+        }
+
+        button {
+            position: absolute;
+            right: 10px;
+            top: 10px;
+            background-color: grey;
+            border: none;
+            transition: 0.3s;
+
+            &:hover {
+                background-color: white;
+            }
+        }
     }
 }
 
 .single-movie {
     box-sizing: border-box;
-    border-radius: 20px;
     padding: 0.5rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    border: 1px solid black;
+    background-color: grey;
+
+    h5 {
+        text-align: center;
+        font-size: 1.3rem;
+        padding: 0.5rem;
+        margin: 0;
+        color: black;
+    }
+
 
     img {
         padding: 1rem;
     }
 
-    h5 {
-        text-align: center;
-        font-size: 16px;
-        padding: 0.5rem;
-    }
+    .movieInfo {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
 
-    .date {
-        padding-top: 0.5rem;
-    }
 
-    .rating {
-        font-size: 2rem;
-    }
+        .date {
+            padding-top: 0.5rem;
+        }
 
-    .overview {
-        font-size: 0.8rem;
-    }
+        .rating {
+            font-size: 2rem;
+        }
 
+        .overview {
+            font-size: 0.8rem;
+        }
+
+        button {
+            background-color: lightgrey;
+            border: none;
+            color: black;
+            margin: 10px 0;
+            width: 100%;
+            transition: 0.4s;
+
+            &:hover {
+                background-color: black;
+                color: white;
+
+            }
+        }
+    }
 }
 
 .none {

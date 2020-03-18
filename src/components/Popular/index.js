@@ -22,7 +22,7 @@ const Popular = () => {
                     <h1 className="col-12">Lista najbardziej populanych filmów w dniu {new Date().toLocaleDateString()}</h1>
                     <div className="container">
                         <div className="row relative">
-                            {popular.map(movie => {
+                            {popular.slice(0, 6).map(movie => {
                                 return (<SingleMovie
                                     key={movie.id}
                                     id={movie.id}

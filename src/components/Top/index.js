@@ -21,7 +21,7 @@ const Top = () => {
                     <h1 className="col-12">Top 20 Najlepszych filmów wszech czasów to:</h1>
                     <div className="container">
                         <div className="row relative">
-                            {top.map(movie => {
+                            {top.slice(1, 7).map(movie => {
                                 return (
                                     <SingleMovie
                                         id={movie.id}

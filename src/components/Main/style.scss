@@ -16,6 +16,22 @@ main {
         justify-content: center;
         align-items: center;
         padding-bottom: 0.5rem;
+
+        input {
+            background-color: white;
+            border: none;
+            outline: none;
+            transition: 0.3s;
+
+            &:hover {
+                background-color: black;
+                color: white;
+            }
+        }
+
+        .custom-select {
+            background-color: black;
+        }
     }
 
 }

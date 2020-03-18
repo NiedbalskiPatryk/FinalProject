@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import "./style.scss";
 import {
     HashRouter as Router,
@@ -6,23 +6,43 @@ import {
 } from 'react-router-dom';
 
 const Navigation = () => {
-    return (
+    const [display, setDisplay] = useState("none");
+    const [display2, setDisplay2] = useState("none");
 
-        <div className="container navbar navbar-dark bg-dark">
+
+
+    const handleClick = (e) => {
+        e.preventDefault();
+        setDisplay(display === "none" ? "inline-block" : "none");
+        setDisplay2(display2 === "none" ? "flex" : "none");
+
+    }
+
+
+    // style={{ display: display }}
+    return (
+        <div className="container">
             <div className="row">
-                <nav className="container">
-                    <ul className="row">
-                        <Router>
-                            <li className="col-3"> <NavLink to="/" >Strona główna</NavLink></li>
-                            <li className="col-3"> <NavLink to="/fav" >Ulubione</NavLink></li>
-                            <li className="col-3"> <NavLink to="/popular" >Dzisiaj polecane</NavLink></li>
-                            <li className="col-3"> <NavLink to="/top" >Top wszechczasów</NavLink></li>
-                        </Router>
+                <nav className="col-12">
+                    <ul>
+                        <div className="logoDiv">
+                            <div className="logo"></div>
+                            <i onClick={handleClick} className={`fas fa-bars`}></i>
+                        </div>
+                        <div className={`${display2} navList`}>
+                            <Router>
+                                <li> <NavLink to="/" >Strona główna</NavLink></li>
+                                <li> <NavLink to="/fav" >Ulubione</NavLink></li>
+                                <li> <NavLink to="/popular" >Dzisiaj polecane</NavLink></li>
+                                <li> <NavLink to="/top" >Top wszechczasów</NavLink></li>
+                            </Router>
+                        </div>
+
+
                     </ul >
                 </nav >
             </div>
-        </div>
-
+        </div >
     );
 }
 

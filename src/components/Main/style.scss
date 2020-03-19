@@ -16,11 +16,13 @@ main {
             background-color: white;
             border: none;
             outline: none;
-            transition: 0.3s;
+            transition: 0.5s;
+            width: 20%;
 
             &:hover {
                 background-color: black;
                 color: white;
+                width: 30%;
             }
         }
 
@@ -37,4 +39,12 @@ main {
 
 .relative {
     position: relative;
+}
+
+@media (max-width:600px) {
+    main {
+        h1 {
+            font-size: 2rem;
+        }
+    }
 }

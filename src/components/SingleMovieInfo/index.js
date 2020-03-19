@@ -1,14 +1,11 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import "./style.scss"
 
 const SingleMovieInfo = (props) => {
     const { movieInfo, setDisplay } = props;
 
-    const [state, setstate] = useState(movieInfo);
+    const imgLinkBig = "http://image.tmdb.org/t/p/w500/"
 
-    const imgLinkBig = "http://image.tmdb.org/t/p/w300/"
-
-    console.log(movieInfo)
     const handleClick = (e) => {
         setDisplay(false);
     }

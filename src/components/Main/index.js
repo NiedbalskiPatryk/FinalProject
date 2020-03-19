@@ -6,7 +6,6 @@ import { MyContext } from "../../App"
 const Main = () => {
     const [value, setValue] = useState("");
     const [movies, setMovie] = useState([]);
-    // const [language, setLanguage] = useState("");
     const { state: { language }, setLanguage } = useContext(MyContext);
 
     const handleChange = (event) => {
@@ -14,7 +13,6 @@ const Main = () => {
         searchMovies(event.target.value)
     };
 
-    console.log(language)
     const searchMovies = (query) => {
         if (!query.length) {
             return setMovie([])
@@ -29,16 +27,39 @@ const Main = () => {
         setLanguage(e.target.value);
     }
 
+    var text;
+    const switchlanguge = (language, text1, text2, text3, text4) => {
+        switch (language) {
+            case "pl-PL":
+                text = text1
+                break;
+            case "en-US":
+                text = text2;
+                break;
+            case "de-DE":
+                text = text3;
+                break;
+            case "ru-RU":
+                text = text4;
+                break;
+            default:
+                console.log("eerrrorrr")
+        }
+    }
+
+
     return (
         <>
             <div className="container">
                 <div className="row">
                     <main className="col-12">
-                        <h1>Witaj w aplikacji do wyszukiwania filmów</h1>
+                        <h1> {switchlanguge(language, "Witaj w aplikacji do wyszukiwania filmów",
+                            "Welcome to the movie search application", "Willkommen in der Filmsuchanwendung",
+                            "Добро пожаловать в приложение для поиска видео")} {text}</h1>
                         <form>
-                            <label htmlFor="">Wpisz tytuł filmu jaki szukasz:</label>
+                            <label htmlFor="">{switchlanguge(language, "Wpisz tytuł filmu jaki szukasz:", "Enter the title of the movie you are looking for:", "Geben Sie den Titel des gesuchten Films ein:", "Введите название фильма, который вы ищете:")}{text}</label>
                             <input type="text" onChange={handleChange} value={value} />
-                            <label htmlFor="">Wybierz język</label>
+                            <label htmlFor="">{switchlanguge(language, "Wybierz język", "Choose language", "Wähle eine Sprache", "Выбрать язык")}{text}</label>
                             <div className="select">
                                 <select onChange={selectedOption} name="" id="">
                                     <option value="pl-PL">PL</option>

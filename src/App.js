@@ -3,9 +3,7 @@ import './style.scss';
 import {
   HashRouter as Router,
   Route,
-  Link,
   Switch,
-  NavLink,
 } from 'react-router-dom';
 import Main from "./components/Main/"
 import Fav from "./components/Favorite/"
@@ -50,7 +48,6 @@ function App() {
   const setLanguage = (lng) => {
     setstate(prev => ({ ...prev, language: lng }))
   }
-  console.log(state.language)
   return (
     <div className="mainContainer">
       <MyContext.Provider value={{ state, setLanguage, addToFavorite }}>

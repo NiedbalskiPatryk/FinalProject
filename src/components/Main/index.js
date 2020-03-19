@@ -51,7 +51,7 @@ const Main = () => {
                     </main>
                 </div>
             </div>
-            <div className="container">
+            <div className="container main">
                 <div className="row relative">
                     {movies.slice(0, 6).map(movie => {
                         return (

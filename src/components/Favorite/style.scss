@@ -1,0 +1,11 @@
+.buttonFav {
+    background-color: grey;
+    border: none;
+    color: white;
+    transition: 0.3s;
+
+    &:hover {
+        background-color: black;
+
+    }
+}

@@ -6,11 +6,16 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-image: url("./images/2017-4-light-background-geo.jpg");
-  background-repeat: no-repeat;
+}
+
+.mainContainer {
+  background-image: url("./images/grey4k.png");
   background-size: cover;
-  width: 100vw;
-  height: 100vh;
+  background-repeat: no-repeat;
+  /* height: 100%; */
+  min-height: 100vh;
+  position: absolute;
+  min-width: 100%;
 }
 
 code {
@@ -20,6 +25,31 @@ code {
 
 @media (min-width:983px) {
   body {
-    height: 100vh;
+    /* height: 100vh; */
   }
+}
+
+.Toastify__toast-container {
+  width: 320px;
+}
+
+.Toastify__toast--default {
+  background: #fff;
+  color: #aaa;
+}
+
+.Toastify__toast--info {
+  background: #3498db;
+}
+
+.Toastify__toast--success {
+  background: #f0fff0;
+}
+
+.Toastify__toast--warning {
+  background: #f1c40f;
+}
+
+.Toastify__toast--error {
+  background: #e74c3c;
 }

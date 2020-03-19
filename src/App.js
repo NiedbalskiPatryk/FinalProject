@@ -47,25 +47,27 @@ function App() {
 
   };
 
-
   const setLanguage = (lng) => {
     setstate(prev => ({ ...prev, language: lng }))
   }
   console.log(state.language)
   return (
-    <MyContext.Provider value={{ state, setLanguage, addToFavorite }}>
-      <Router>
-        <Navigation />
-        <Switch>
-          <Route path="/fav" component={Fav}></Route>
-          <Route path="/top" component={Top}></Route>
-          <Route path="/popular" component={Popular}></Route>
-          <Route path="/" component={Main}></Route>
-        </Switch>
-      </Router >
-      <ToastContainer autoClose={6000} />
-      <Footer />
-    </MyContext.Provider>
+    <div className="mainContainer">
+      <MyContext.Provider value={{ state, setLanguage, addToFavorite }}>
+        <Router>
+          <Navigation />
+          <Switch>
+            <Route path="/fav" component={Fav}></Route>
+            <Route path="/top" component={Top}></Route>
+            <Route path="/popular" component={Popular}></Route>
+            <Route path="/" component={Main}></Route>
+          </Switch>
+
+        </Router >
+        <ToastContainer autoClose={2000} />
+        <Footer />
+      </MyContext.Provider>
+    </div>
   );
 }
 

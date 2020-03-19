@@ -4,7 +4,7 @@ import "./style.scss"
 const Footer = () => {
     return (
         <footer>
-            Dane dostarcza themoviedb.org - wszelkie prawa zastrzeżone. 2020r. Patryk Niedbalski CodersLab
+            DB: themoviedb.org 2020r. Patryk Niedbalski
         </footer>
     );
 }

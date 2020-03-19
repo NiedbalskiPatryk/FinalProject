@@ -1,9 +1,9 @@
 .absolute {
     position: fixed;
-    // top: 0;
-    // bottom: 0;
-    // left: 0;
-    // right: 0;
+    top: 50px;
+    bottom: 50px;
+    left: 0;
+    right: 0;
     z-index: 1;
     background-color: rgb(39, 39, 39);
     display: flex;
@@ -11,13 +11,14 @@
     align-items: center;
 
     img {
+        height: 80vh;
         padding: 20px;
     }
 
     .absoluteDiv {
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: space-around;
         align-items: center;
         color: white;
 
@@ -28,17 +29,25 @@
             flex-direction: column;
 
             h5 {
-                font-size: 4rem;
+                font-size: 3rem;
                 text-align: center;
             }
 
             .date {
-                font-size: 2rem;
+                font-size: 1.5rem;
             }
 
             .rating {
-                font-size: 2rem;
+                font-size: 1.5rem;
             }
+
+        }
+
+        .overview {
+            font-size: 1rem;
+            overflow-y: scroll;
+            max-height: 30vh;
+
         }
 
         button {
@@ -116,4 +125,36 @@
 
 .none {
     display: none;
+}
+
+@media (max-width:600px) {
+    .absolute {
+        top: 80px;
+        bottom: 80px;
+
+        img {
+            height: 60vh;
+        }
+
+        .absoluteDiv {
+            .titleDateRating {
+                h5 {
+                    font-size: 1.3rem;
+                }
+
+                .date {
+                    font-size: 1rem;
+                }
+
+                .rating {
+                    font-size: 1rem;
+                }
+
+            }
+
+            .overview {
+                font-size: 0.8rem;
+            }
+        }
+    }
 }

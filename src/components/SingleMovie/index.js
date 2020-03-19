@@ -1,7 +1,7 @@
 import React, { useState, useContext } from 'react';
 import "./style.scss"
 import { MyContext } from "../../App"
-import SingleMovieInfo from "../SingleMovieInfo"
+
 
 const SingleMovie = props => {
     const { title, img, release, rating, overview, id } = props;
@@ -15,7 +15,7 @@ const SingleMovie = props => {
         setDisplay2(display2 === "none" ? "block" : "none")
     }
     const imgLink = "http://image.tmdb.org/t/p/w185/"
-    const imgLinkBig = "http://image.tmdb.org/t/p/w400/"
+    const imgLinkBig = "http://image.tmdb.org/t/p/w300/"
     return (
         <>
             <div className={`${display} absolute container`} >
@@ -48,7 +48,6 @@ const SingleMovie = props => {
                         </div>
                     </div>
                     <div className="row">
-
                     </div>
                 </div>
             </div>

@@ -3,6 +3,7 @@ main {
     h1 {
         text-align: center;
         padding: 1rem;
+
     }
 
     form {
@@ -17,18 +18,35 @@ main {
             border: none;
             outline: none;
             transition: 0.5s;
-            width: 20%;
+            animation: input 3s 0.5s infinite alternate ease-out both;
+            border: 1px solid grey;
+            // width: 20%;
+
+
 
             &:hover {
-                background-color: black;
-                color: white;
-                width: 30%;
+
+
+                // width: 30%;
             }
         }
 
         .custom-select {
             background-color: black;
+
         }
+    }
+}
+
+@keyframes input {
+    0% {
+        // width: 20%;
+    }
+
+    100% {
+        // width: 30%;
+        background-color: darkgray;
+        // color: white;
     }
 }
 

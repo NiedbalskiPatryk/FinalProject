@@ -13,7 +13,6 @@ import Navigation from './components/Navigation';
 import { toast, ToastContainer } from 'react-toastify';
 import Footer from "./components/Footer"
 
-
 export const MyContext = React.createContext(null);
 
 function App() {

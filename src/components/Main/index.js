@@ -13,6 +13,7 @@ const Main = () => {
         searchMovies(event.target.value)
     };
 
+    console.log(movies)
     const searchMovies = (query) => {
         if (!query.length) {
             return setMovie([])
@@ -57,7 +58,7 @@ const Main = () => {
                             "Welcome to the movie search application", "Willkommen in der Filmsuchanwendung",
                             "Добро пожаловать в приложение для поиска видео")} {text}</h1>
                         <form>
-                            <label htmlFor="">{switchlanguge(language, "Wpisz tytuł filmu jaki szukasz:", "Enter the title of the movie you are looking for:", "Geben Sie den Titel des gesuchten Films ein:", "Введите название фильма, который вы ищете:")}{text}</label>
+                            <label htmlFor="">{switchlanguge(language, "Wpisz tytuł filmu:", "Enter the title of the movie you are looking for:", "Geben Sie den Titel des gesuchten Films ein:", "Введите название фильма, который вы ищете:")}{text}</label>
                             <input type="text" onChange={handleChange} value={value} />
                             <label htmlFor="">{switchlanguge(language, "Wybierz język", "Choose language", "Wähle eine Sprache", "Выбрать язык")}{text}</label>
                             <div className="select">

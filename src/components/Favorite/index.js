@@ -10,11 +10,6 @@ const Fav = () => {
     const { state: { language } } = useContext(MyContext);
     const [display, setDisplay] = useState(false);
 
-    // useEffect(() => {
-    //     fetch("http://localhost:4000/favoriteMovies")
-    //         .then(res => res.json())
-    //         .then(res => setfavMovieId(res))
-    // }, []);
 
     useEffect(() => {
         fetchMovie()
@@ -32,9 +27,6 @@ const Fav = () => {
             .then(res => res.json())
             .then(res => setfavMovieInfo(res));
         setDisplay(display === false ? true : false);
-        if (display) {
-            setDisplay(false)
-        }
     }
 
     const deleteFav = (id) => {

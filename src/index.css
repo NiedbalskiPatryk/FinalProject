@@ -43,7 +43,7 @@ code {
 }
 
 .Toastify__toast--success {
-  background: #f0fff0;
+  background: #49c245;
 }
 
 .Toastify__toast--warning {
@@ -51,5 +51,5 @@ code {
 }
 
 .Toastify__toast--error {
-  background: #e74c3c;
+  background: #ac4a3f;
 }

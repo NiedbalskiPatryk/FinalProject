@@ -13,7 +13,7 @@ const Main = () => {
         searchMovies(event.target.value)
     };
 
-    console.log(movies)
+
     const searchMovies = (query) => {
         if (!query.length) {
             return setMovie([])

@@ -8,25 +8,11 @@
       "release": "2019-12-04"
     },
     {
-      "title": "Schindlers Liste",
-      "img": "/lExWRUDOkb0Oe7e5NCwLrTKUWVG.jpg",
-      "rating": 8.6,
-      "id": 424,
-      "release": "1993-11-30"
-    },
-    {
       "title": "Iron Man 3",
       "img": "/6rv3KYHOYpGqTAaejkGbBvcW370.jpg",
       "rating": 6.9,
       "id": 68721,
       "release": "2013-04-18"
-    },
-    {
-      "title": "Iron Man 2",
-      "img": "/riFnBWrK3sdndFjKVSaQdkxprLr.jpg",
-      "rating": 6.8,
-      "id": 10138,
-      "release": "2010-04-28"
     },
     {
       "title": "Planeta singli 2",
@@ -43,20 +29,6 @@
       "release": "2010-07-21"
     },
     {
-      "title": "К звёздам",
-      "img": "/dcbPgUymJt6tbUbs7U6L2Jc0wXD.jpg",
-      "rating": 6,
-      "id": 419704,
-      "release": "2019-09-17"
-    },
-    {
-      "title": "Ojciec Chrzestny II",
-      "img": "/tN9eOmUSN0aI79OmRxdf344xRkD.jpg",
-      "rating": 8.5,
-      "id": 240,
-      "release": "1974-12-20"
-    },
-    {
       "title": "Kimi no Na wa.",
       "img": "/vpQxNHhS6BxmwKiWoUUPancE4mV.jpg",
       "rating": 8.5,
@@ -69,6 +41,34 @@
       "rating": 6.5,
       "id": 181812,
       "release": "2019-12-18"
+    },
+    {
+      "title": "Ojciec Chrzestny",
+      "img": "/yS3EVRQdmTH2bPQxhE13sUluvxq.jpg",
+      "rating": 8.7,
+      "id": 238,
+      "release": "1972-03-14"
+    },
+    {
+      "title": "Iron Man",
+      "img": "/zuxaH2oakoDyo6vXgV8q54ChYTP.jpg",
+      "rating": 7.6,
+      "id": 1726,
+      "release": "2008-04-30"
+    },
+    {
+      "title": "Мулан",
+      "img": "/qgEV9sZPEk8meR5XPQyhxmJWgGt.jpg",
+      "rating": 8.8,
+      "id": 337401,
+      "release": "2020-03-09"
+    },
+    {
+      "title": "Мулан",
+      "img": "/wLB0VhC2FafMr6QEVH9ReX0Id3j.jpg",
+      "rating": 7.9,
+      "id": 10674,
+      "release": "1998-06-18"
     }
   ]
 }

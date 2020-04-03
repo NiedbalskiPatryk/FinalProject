@@ -1,3 +1,16 @@
+Witam w projekcie finałowym kursu JavaScript React Frontend Developer Patryk Niedbalskiego.
+
+Jak rozpocząć:
+
+1. Odpal json server np. json-server -p 4000 db.json. Dzięki temu utworzysz na swoim dysku server imitujący przechowywyanie Twoich ulubionych filmów, umowżliwijący ich dodawanie lub usuwanie.
+
+2. Odpal npm start. W przeglądarce powinna włączyć się aplikacja.
+
+3. Aplikacja składa się z 4 stron. Jej główną funkcją jest wyszukiwarka filmów. Na pierwszej stronie możesz również wybrać język aplikacji. Druga zakładka to ulubione - imituje wysyłanie do serwera informacji o polubionym filmie, oraz daje możliwość zapisu ulubionej pozycji. Trzecia pozcyja to top6 polecanych na aktualny dzień. Ostatnia to top6 wszechczasów w stosunku ilości głosów do oceny.
+
+Dzięki za opinie!
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
